@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on yang</title>
+    <link>https://dishmie.github.io/posts/</link>
+    <description>Recent content in Posts on yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript</title>
+      <link>https://dishmie.github.io/posts/javascript/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/javascript/</guid>
+      <description>一直没有静下心来，打扫 JavaScript 的边边角角，慢慢干吧~ 第一部分 JavaScript 编程语言 什么是 JavaScript？ 一种可以直接写在网页 HTML 中的脚本语言，在页面加载的时候自动执行。脚本以</description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>https://dishmie.github.io/posts/shell/</link>
+      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/shell/</guid>
+      <description>附录 shell 中的 if…else 基本语法如下： if [ 条件1 ]; then # 条件1为真时执行的代码 elif [ 条件2 ]; then # 条件2为真时执行的代码 else # 条件为假时执行的代码 fi 其中： [ 条件 ]：[ ]</description>
+    </item>
+    
+    <item>
+      <title>Lua</title>
+      <link>https://dishmie.github.io/posts/lua/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/lua/</guid>
+      <description>📘 Lua 5.3 参考手册 📗 Lua 教程 | 菜鸟教程 这里我们以实用性为中心，简要了解一下其基本用法 ~ 基本概念 注释 以两个连字符 -- 开头。 -- 单行注释 --[[ 多行注释 多行注释 --]] 标识符 以一个字母 A-Za-z</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://dishmie.github.io/posts/python/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/python/</guid>
+      <description>官方文档请参阅 📖 Python 教程 — Python 3.13.1 文档。 本语言的命名源自 BBC 的 “Monty Python 飞行马戏团”，与爬行动物无关（Python 原义为“蟒蛇”）。 基础 计算机编程语言和我们日常使用</description>
+    </item>
+    
+    <item>
+      <title>Elisp</title>
+      <link>https://dishmie.github.io/posts/elisp/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/elisp/</guid>
+      <description>📕 转载自 Emacs Lisp 简明教程 - 水木社区 Emacs 版 这是 叶文彬（水木 ID: happierbee) 写的一份 Emacs Lisp 的教程，深入浅出，非常适合初学者。文档的 TeX 代码及 PDF 文档可在此处下载 。 emacs 的高手不能不会 elisp</description>
+    </item>
+    
+    <item>
+      <title>md mode</title>
+      <link>https://dishmie.github.io/posts/md/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/md/</guid>
+      <description>这里是 Hugo 解析 Markdown 内容的展示，如果你使用的是 Org Mode ，可以跳转 Org Mode 查看相关样式。 以下 markdown 正文内容，摘自 Markdown 测试文本 ，并添加、修改了一些章节。 This post is originated from here and is used for testing markdown style. This post contains</description>
+    </item>
+    
+    <item>
+      <title>Regex</title>
+      <link>https://dishmie.github.io/posts/regex/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/regex/</guid>
+      <description>很强大，也让人很头大…… 这只是一个精简的摘要，即使总结的再全面，一段时间之后，也需要借助参考手册，才能正确的使用它。 简介 正则表达式是什么？一个表达式，它定义了一</description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://dishmie.github.io/posts/css/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/css/</guid>
+      <description>CSS 中的 transform（变换）、transition（过渡） 和 animation（动画） ，简称 TTA。 CSS 什么的这种逻辑性略弱、规则性很强的领域，边用边深入就好</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://dishmie.github.io/posts/git/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/git/</guid>
+      <description>不可或缺的工具！！！ 本文旨在记录个人使用过程中遇到的相关 Git 命令，非教程式的，详细学习请参阅 《Pro Git》 的中文文档。 入门篇 安装设置 去 Git 官网 下载对应版本的 Git 安装</description>
+    </item>
+    
+    <item>
+      <title>org mode</title>
+      <link>https://dishmie.github.io/posts/org/</link>
+      <pubDate>Wed, 29 Jun 2022 10:02:15 +0800</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/org/</guid>
+      <description>[#S] bibg 参考配置 ————- ditaa ..————————– \— - \- +——————-+/ \ first second \ / ——————- -\ /- markdown . . ….. —\ /— evil ————- &amp;lt;2025-05-26 Mon&amp;gt; www refer \begin{equation} \left \{ \begin{aligned} 0 &amp;amp;= i_{a} + i_{b}</description>
+    </item>
+    
+    <item>
+      <title>Basic</title>
+      <link>https://dishmie.github.io/posts/20250505095609-basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250505095609-basic/</guid>
+      <description>java 反编译 javap -c AutoBoxTest.class , IDEA 插件 jclasslib 跨平台语言有很多优点，比如提高开发效率，降低维护成本，扩大用户群等。 跨平台语言也有一些缺点，比如性能损失，兼容性问题，安全风险等。 IO BIO (Blocking</description>
+    </item>
+    
+    <item>
+      <title>Cache</title>
+      <link>https://dishmie.github.io/posts/20250504194959-cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250504194959-cache/</guid>
+      <description>缓存相关 缓存雪崩 缓存穿透 缓存击穿 重建导致系统压力大？ Redisson 分布式锁，双重检查缓存，读写锁，缓存预热+多级缓存 多级缓存 读取顺序 -&amp;gt; L1 -&amp;gt; L2 -&amp;gt; DB 数据更新 从数据库中读取最新数</description>
+    </item>
+    
+    <item>
+      <title>Design</title>
+      <link>https://dishmie.github.io/posts/20250514094558-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250514094558-design/</guid>
+      <description>短链系统 通过哈希算法对长链去哈希。 一般建议使用用非加密型哈希算法比如 MurmurHash 。因为，相比于 MD5，SHA 等加密型哈希算法，非加密型哈希算法往往效率更高！ 我们拿 MurmurHash 来说，</description>
+    </item>
+    
+    <item>
+      <title>Distributed</title>
+      <link>https://dishmie.github.io/posts/20250507091107-distributed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250507091107-distributed/</guid>
+      <description>SpringCloud Gateway 构建于 Spring WebFlux 之上，使用 Project Reactor 库实现响应式编程模型。 它专门设计为在 Netty 环境中运行，充分利用 Netty 的高性能非阻塞 I/O 特性。 这种设计使得 Spring Cloud Gateway 能够在处理大量并发请求时保持较低</description>
+    </item>
+    
+    <item>
+      <title>ES</title>
+      <link>https://dishmie.github.io/posts/20250504182819-es/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250504182819-es/</guid>
+      <description>config refer fsync refresh merge 消耗磁盘 IO，非存储是并发性能较好的 SSD ，控制并发的 merge 线程数 = 1 制作索引模板 ElasticSearch索引状态监控，一般排查思路有哪些？ 可使用Kiban</description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://dishmie.github.io/posts/20250505174524-spring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250505174524-spring/</guid>
+      <description>SpringIOC Spring 的 IOC（控制反转）是工厂模式+Java 的反射机制。 出现的原因：在传统的程序开发中，当需要调用对象时，通常由调用者来创建被调用者的实例，即对象是由调用者主动</description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://dishmie.github.io/posts/20250506151856-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250506151856-sql/</guid>
+      <description>ACID 原子性(Atomicity) 事务被视为不可分割的最小单元，事务的所有操作要么全部提交成功，要么全部失败回滚。回滚可以用回滚日志（Undo Log）来实现，回滚日</description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://dishmie.github.io/posts/20250505154346-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250505154346-web/</guid>
+      <description>Reactor Reactor先是通过IO多路复用(select\poll\epoll)，非阻塞地监听到是否有请求连接过来了， 再分发到资源处理器负责处理具体的（连接、读、写）</description>
+    </item>
+    
+  </channel>
+</rss>

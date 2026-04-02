@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OLs on yang</title>
+    <link>https://dishmie.github.io/categories/ols/</link>
+    <description>Recent content in OLs on yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/categories/ols/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript</title>
+      <link>https://dishmie.github.io/posts/javascript/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/javascript/</guid>
+      <description>一直没有静下心来，打扫 JavaScript 的边边角角，慢慢干吧~ 第一部分 JavaScript 编程语言 什么是 JavaScript？ 一种可以直接写在网页 HTML 中的脚本语言，在页面加载的时候自动执行。脚本以</description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>https://dishmie.github.io/posts/shell/</link>
+      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/shell/</guid>
+      <description>附录 shell 中的 if…else 基本语法如下： if [ 条件1 ]; then # 条件1为真时执行的代码 elif [ 条件2 ]; then # 条件2为真时执行的代码 else # 条件为假时执行的代码 fi 其中： [ 条件 ]：[ ]</description>
+    </item>
+    
+    <item>
+      <title>Lua</title>
+      <link>https://dishmie.github.io/posts/lua/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/lua/</guid>
+      <description>📘 Lua 5.3 参考手册 📗 Lua 教程 | 菜鸟教程 这里我们以实用性为中心，简要了解一下其基本用法 ~ 基本概念 注释 以两个连字符 -- 开头。 -- 单行注释 --[[ 多行注释 多行注释 --]] 标识符 以一个字母 A-Za-z</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://dishmie.github.io/posts/python/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/python/</guid>
+      <description>官方文档请参阅 📖 Python 教程 — Python 3.13.1 文档。 本语言的命名源自 BBC 的 “Monty Python 飞行马戏团”，与爬行动物无关（Python 原义为“蟒蛇”）。 基础 计算机编程语言和我们日常使用</description>
+    </item>
+    
+    <item>
+      <title>Elisp</title>
+      <link>https://dishmie.github.io/posts/elisp/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/elisp/</guid>
+      <description>📕 转载自 Emacs Lisp 简明教程 - 水木社区 Emacs 版 这是 叶文彬（水木 ID: happierbee) 写的一份 Emacs Lisp 的教程，深入浅出，非常适合初学者。文档的 TeX 代码及 PDF 文档可在此处下载 。 emacs 的高手不能不会 elisp</description>
+    </item>
+    
+    <item>
+      <title>Regex</title>
+      <link>https://dishmie.github.io/posts/regex/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/regex/</guid>
+      <description>很强大，也让人很头大…… 这只是一个精简的摘要，即使总结的再全面，一段时间之后，也需要借助参考手册，才能正确的使用它。 简介 正则表达式是什么？一个表达式，它定义了一</description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://dishmie.github.io/posts/css/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/css/</guid>
+      <description>CSS 中的 transform（变换）、transition（过渡） 和 animation（动画） ，简称 TTA。 CSS 什么的这种逻辑性略弱、规则性很强的领域，边用边深入就好</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://dishmie.github.io/posts/git/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/git/</guid>
+      <description>不可或缺的工具！！！ 本文旨在记录个人使用过程中遇到的相关 Git 命令，非教程式的，详细学习请参阅 《Pro Git》 的中文文档。 入门篇 安装设置 去 Git 官网 下载对应版本的 Git 安装</description>
+    </item>
+    
+  </channel>
+</rss>

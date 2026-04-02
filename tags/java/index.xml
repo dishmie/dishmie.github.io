@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on yang</title>
+    <link>https://dishmie.github.io/tags/java/</link>
+    <description>Recent content in java on yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://dishmie.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic</title>
+      <link>https://dishmie.github.io/posts/20250505095609-basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250505095609-basic/</guid>
+      <description>java 反编译 javap -c AutoBoxTest.class , IDEA 插件 jclasslib 跨平台语言有很多优点，比如提高开发效率，降低维护成本，扩大用户群等。 跨平台语言也有一些缺点，比如性能损失，兼容性问题，安全风险等。 IO BIO (Blocking</description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://dishmie.github.io/posts/20250505174524-spring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250505174524-spring/</guid>
+      <description>SpringIOC Spring 的 IOC（控制反转）是工厂模式+Java 的反射机制。 出现的原因：在传统的程序开发中，当需要调用对象时，通常由调用者来创建被调用者的实例，即对象是由调用者主动</description>
+    </item>
+    
+  </channel>
+</rss>

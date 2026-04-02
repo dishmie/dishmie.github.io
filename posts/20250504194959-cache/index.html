@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Cache - https://dishmie.github.io/posts/20250504194959-cache/">
+    <meta name="author" content="Jack - https://dishmie.github.io/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>Cache</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://dishmie.github.io/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate ">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": false
+	}
+</div>
+    <h1 class="title">
+        
+            Cache
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            0001-01-01&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2026-04-02&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            6609 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            14 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/dev">dev</a>
+			
+		</div>
+		<div class="tag">
+			
+			
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://dishmie.github.io/posts/20250505095609-basic/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://dishmie.github.io/posts/20250514094558-design/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">缓存相关</a>
+<ul>
+<li><a href="#headline-2">缓存雪崩</a>
+</li>
+<li><a href="#headline-3">缓存穿透</a>
+</li>
+<li><a href="#headline-4">缓存击穿</a>
+</li>
+<li><a href="#headline-5">多级缓存</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-6">缓存淘汰算法</a>
+</li>
+<li><a href="#headline-7">Redis</a>
+<ul>
+<li><a href="#headline-8">大Key 和 热Key</a>
+<ul>
+<li><a href="#headline-9">big key/big value</a>
+</li>
+<li><a href="#headline-10">热key</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-11">数据类型</a>
+</li>
+<li><a href="#headline-12">过期策略</a>
+</li>
+<li><a href="#headline-13">内存淘汰机制</a>
+</li>
+<li><a href="#headline-14">持久化</a>
+<ul>
+<li><a href="#headline-15">RDB</a>
+</li>
+<li><a href="#headline-16">AOF</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-17">JWT</a>
+</li>
+<li><a href="#headline-18">高可用</a>
+<ul>
+<li><a href="#headline-19">主从架构</a>
+</li>
+<li><a href="#headline-20">主从复制</a>
+<ul>
+<li><a href="#headline-21">为什么主从全量复制使用 RDB 而不是 AOF？</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-22">Sentinel</a>
+</li>
+<li><a href="#headline-23">Cluster</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-24">Redisson</a>
+<ul>
+<li><a href="#headline-25">分布式锁</a>
+</li>
+<li><a href="#headline-26">读写锁</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-27">Caffeine</a>
+<ul>
+<li><a href="#headline-28">缓存淘汰</a>
+</li>
+<li><a href="#headline-29">时间轮</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-30">Bloom Filter</a>
+</li>
+</ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+缓存相关
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+缓存雪崩
+</h3>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+缓存穿透
+</h3>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+缓存击穿
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>重建导致系统压力大？
+<a href="Redisson">Redisson</a> 分布式锁，双重检查缓存，读写锁，缓存预热+多级缓存</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+多级缓存
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>读取顺序 -&gt; L1 -&gt; L2 -&gt; DB
+数据更新</p>
+<ol>
+<li>从数据库中读取最新数据，依次更新 L1_1 -&gt; L2 ，广播(JGroups 和 Redis Subscribe)清除某个缓存信息</li>
+<li>接收到广播（手工清除缓存 &amp; 一级缓存自动失效），从 L1_2 中清除指定的缓存信息</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-2">
+<h2 id="headline-6">
+缓存淘汰算法
+</h2>
+<div id="outline-text-headline-6" class="outline-text-2">
+<ol>
+<li>先进先出算法（FIFO，First In First Out）：按照缓存中数据进入的先后顺序进行淘汰，也就是优先淘汰掉最先缓存的数据，不管这个数据是否被经常访问，是否最近被访问过。这是最简单的一种淘汰算法，但缓存命中率非常低，一般不会采用，也不建议使用。</li>
+<li>最近最久未使用算法（LRU，Least Recently Used）：保留最近被使用过的缓存项，淘汰最久未被访问的缓存项。即如果一个缓存项长时间没有被访问，那么它很可能在之后也不会被访问，因此可以将其淘汰，这是局部性原理的应用。这种算法相比于 FIFO 有了不少优化，缓存命中率还可以，实现起来也比较简单，因此使用率非常高。面试中，经常会有面试官提问：“如何实现一个 LRU 本地缓存？”。不过，由于 LRU 不能反映访问频率， 导致其无法应对突发流量。当系统出现短时间的高并发访问或者突发流量时，很多新的缓存项会被加入，由于缓存空间有限，LRU 可能会将一些访问频率较高的热点缓存项从缓存中淘汰掉，从而影响系统的性能。</li>
+<li>最少使用算法（LFU，Least Frequently Used）：保留使用频率最高的缓存项，淘汰使用频率最低的缓存项。即如果一个缓存项多次被访问，则认为它比其他缓存项更有用，因此应该保留。LFU 算法可以反映访问频率，但其又需要较高的内存占用，并且无法处理稀疏流量（Sparse Burst）的场景（这两个缺点后文会详细介绍到）。</li>
+<li>时钟算法（Clock） ：将缓存项看做一个环形链表，每个缓存项有一个引用位，初值都为 0。当某个缓存项被访问时，把它的引用位设置为 1。当需要淘汰缓存项时，从当前位置开始扫描所有缓存项，找到第一个引用位为 0 的缓存项，将其淘汰。如果所有缓存项的引用位都为 1，则重新扫描一次并清空所有引用位，然后再执行淘汰操作。Clock 算法无法反应访问频率且对访问模式敏感（如果访问模式具有周期性、局部性等特征，该算法可能导致缓存中某些重要的数据被过早地淘汰），一般不会采用。</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-2">
+<h2 id="headline-7">
+Redis
+</h2>
+<div id="outline-text-headline-7" class="outline-text-2">
+<ul>
+<li>纯内存操作。</li>
+<li>核心是基于非阻塞的 IO 多路复用机制。</li>
+<li>C 语言实现，一般来说，C 语言实现的程序“距离”操作系统更近，执行速度相对会更快。</li>
+<li>单线程反而避免了多线程的频繁上下文切换问题，预防了多线程可能产生的竞争问题。</li>
+</ul>
+<div id="outline-container-headline-8" class="outline-3">
+<h3 id="headline-8">
+大Key 和 热Key
+</h3>
+<div id="outline-text-headline-8" class="outline-text-3">
+<p>key最大限制为512M</p>
+<div id="outline-container-headline-9" class="outline-4">
+<h4 id="headline-9">
+big key/big value
+</h4>
+<div id="outline-text-headline-9" class="outline-text-4">
+<p><code class="verbatim">MEMORY USAGE my_large_key</code> , <code class="verbatim">INFO memory</code></p>
+<ol>
+<li>内存占用增加：大值会占用更多的内存，尤其是在Redis中存储大量大值时，可能会迅速耗尽可用内存。</li>
+<li>性能阻塞：某些Redis操作（如GET、SET、DEL等）在处理大值时可能会阻塞Redis服务器，导致其他请求无法及时处理。例如，DEL一个包含数百万元素的列表或哈希表可能会导致Redis在几秒钟内无法响应其他请求。</li>
+<li>网络传输开销：大值在客户端与Redis服务器之间传输时，会增加网络带宽的使用，可能导致网络延迟或超时。</li>
+<li>备份和持久化压力：大值会增加Redis的RDB快照和AOF日志的大小，导致备份和持久化操作的时间变长，甚至可能引发磁盘I/O瓶颈。</li>
+<li><a href="主从复制">主从复制</a></li>
+</ol>
+<p>—</p>
+<ol>
+<li>分片存储：对于非常大的值，可以考虑将其拆分成多个小块进行存储。例如将一个大列表List拆分成多个较小的列表List存储。</li>
+<li>使用压缩：对于文本或二进制数据，可以考虑使用压缩算法（如Gzip、Snappy）来减少值的大小。</li>
+<li>使用外部存储：对于不适合存储在Redis中的大数据，可以考虑将其存储在其他专门的存储系统中（如Amazon S3、HDFS），并在Redis中只存储指向这些数据的引用（如URL或ID）。</li>
+<li>使用流式处理：对于需要频繁读取或写入大值的场景，可以考虑使用Redis的流式处理功能（如XREAD和XADD），每次进读取部分数据，以避免一次性加载整个大值。</li>
+<li>优化数据结构：选择合适的数据结构来存储数据。例如，使用ZSET（有序集合）而不是HASH（哈希表）来存储带有权重的数据，或者使用LIST（列表）而不是SET（集合）来存储有序的元素。</li>
+<li>清理过期数据：使用Redis的过期机制（EXPIRE、TTL）定期清理不再需要的大键或大值，避免长期占用内存。</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-4">
+<h4 id="headline-10">
+热key
+</h4>
+<div id="outline-text-headline-10" class="outline-text-4">
+<p><code class="verbatim">SLOWLOG GET 10</code> ， <code class="verbatim">INFO keyspace</code></p>
+<ol>
+<li>性能下降：当某个键的读写请求量非常大时，Redis会花费大量时间处理这些请求，导致其他请求被阻塞，进而影响整个系统的性能。</li>
+<li>系统不稳定：频繁访问同一个键会导致Redis的CPU、内存和网络资源被过度占用，影响其他键的正常访问。在极端情况下，Redis 实例可能会崩溃或无法正常工作。</li>
+<li>延迟增加：由于Redis是单线程的，所有命令都是按顺序执行的。如果某个热键的请求过多，其他命令的执行会被推迟，导致整体延迟增加。</li>
+<li><a href="缓存击穿">缓存击穿</a>：如果热键是一个缓存数据，并且该键突然失效或过期，可能会导致大量的请求直接打到后端数据库，造成“缓存击穿”现象，给后端系统带来巨大压力。</li>
+</ol>
+<p>—</p>
+<ol>
+<li>
+<p>优化缓存设计</p>
+<ul>
+<li>细化缓存粒度：将缓存的粒度细化，避免多个不同的请求命中同一个缓存键。例如，将页面中的各个部分分别缓存为不同的键，而不是将整个页面缓存为一个键。</li>
+<li>合理设置缓存过期时间：根据业务需求，合理设置缓存的过期时间。过短的过期时间会导致频繁的缓存更新操作，增加热键的压力；过长的过期时间可能会导致缓存数据不及时更新，影响业务的准确性。</li>
+</ul>
+</li>
+<li>引入<a href="id:acafa7ab-58c3-485b-819f-641ff990113d::*限流">限流</a>、<a href="id:acafa7ab-58c3-485b-819f-641ff990113d::*熔断">熔断</a>等<a href="id:acafa7ab-58c3-485b-819f-641ff990113d::*降级">降级</a>机制</li>
+<li>
+<p>使用<a href="Cluster">Redis Cluster</a>或分片（Sharding）（推荐）</p>
+<ul>
+<li>Redis Cluster：Redis Cluster是Redis的官方分布式解决方案，支持自动分片和故障转移。通过将数据分散到多个节点上，可以有效缓解单个节点的压力，避免热键问题</li>
+<li>手动将数据分片到多个Redis实例上。你可以使用一致性哈希算法或其他分片策略，确保热点数据均匀分布在不同的实例上</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">
+数据类型
+</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<ul>
+<li>String
+Simple Dynamic String ，一个带长度信息的字节数组，字符串的大小小与1M时，每次扩容都是加倍，达到1M时，每次扩容都是增加1M,最大的长度限制是512M
+缓存对象、常规计数、分布式锁、共享 session 信息等</li>
+<li>List
+链表结构，当列表弹出了最后一个元素之后，该数据结构自动被删除，内存被回收
+消息队列（但是有两个问题：1. 生产者需要自行实现全局唯一 ID；2. 不能以消费组形式消费数据）等</li>
+<li>Hash
+数组加链表，value的值只能是字符串，渐进式 rehash 策略
+缓存对象、购物车等</li>
+<li>Set
+聚合计算（并集、交集、差集）场景，比如点赞、共同关注、抽奖活动等</li>
+<li>
+<p>Zset</p>
+<ul>
+<li>跳表和红黑树
+通过概率算法动态生成索引层级，没有左旋右旋等操作，逻辑理解更简单
+范围查询通过O(longn)定位起点，然后再原始的链表中往后遍历即可
+层数和节点结构是动态的，可以基于概率分布调整层数，灵活适应不同的数据量</li>
+<li>跳表和<a href="id:32a5ab5d-f049-4d9f-b635-09a7cff8ce7b::*index">B+树</a>
+大部分跳表节点仅需维护自身的值和一个指针（可能还有一个回退指针）,B+树是多叉树，一个节点需要多个指针，内存开销相比跳表大</li>
+</ul>
+</li>
+</ul>
+<p>—</p>
+<ul>
+<li>BitMap
+二值状态统计的场景，比如签到、判断用户登陆状态、连续签到用户总数等</li>
+<li>HyperLogLog
+海量数据基数统计的场景，网页 UV 计数等</li>
+<li>GEO
+存储地理位置信息的场景</li>
+<li>Stream
+消息队列，自动生成全局唯一消息ID，支持以消费组形式消费数据</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+过期策略
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<p><code class="verbatim">定期删除</code> Redis 默认是每隔 100ms 就随机抽取一些设置了过期时间的 key，检查其是否过期，如果过期就删除
+<code class="verbatim">惰性删除</code> 获取 key 的时候，如果此时 key 已经过期，就删除，不会返回任何东西</p>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
+<h3 id="headline-13">
+内存淘汰机制
+</h3>
+<div id="outline-text-headline-13" class="outline-text-3">
+<p>Redis 提供了6种内存淘汰策略：</p>
+<ul>
+<li>volatile-lru（least recently used）：从已设置过期时间的数据集中挑选最近最少使用的数据淘汰。</li>
+<li>volatile-ttl：从已设置过期时间的数据集中挑选将要过期的数据淘汰。</li>
+<li>volatile-random：从已设置过期时间的数据集中任意选择数据淘汰。</li>
+<li>allkeys-lru（least recently used）：从数据集中移除最近最少使用的数据淘汰。</li>
+<li>allkeys-random：从数据集中任意选择数据淘汰。</li>
+<li>no-eviction：禁止驱逐数据，当内存不足以容纳新写入数据时，新写入操作会报错。</li>
+</ul>
+<p>4.0 版本后增加以下两种：</p>
+<ul>
+<li>volatile-lfu（least frequently used）：从已设置过期时间的数据集中挑选最不经常使用的数据淘汰。</li>
+<li>allkeys-lfu（least frequently used）：从数据集中移除最不经常使用的数据淘汰。</li>
+</ul>
+<p>*缓存优化：选择 allkeys-lru 或 allkeys-lfu。
+*避免关键数据丢失：选择 noeviction 并监控内存。
+*TTL 优先：选择 volatile-xxx。
+<code class="verbatim">没有银弹</code> 具体选择哪种策略取决于你的具体应用场景和需求</p>
+<p>
+allkeys-lru：当内存不足以容纳新写入数据时，在键空间中，移除最近最少使用的 key（最常用</p>
+<div class="src src-java">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">LRUCache</span><span style="color:#000;font-weight:bold">&lt;</span>K<span style="color:#000;font-weight:bold">,</span> V<span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">extends</span> LinkedHashMap<span style="color:#000;font-weight:bold">&lt;</span>K<span style="color:#000;font-weight:bold">,</span> V<span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">private</span> <span style="color:#000;font-weight:bold">final</span> <span style="color:#458;font-weight:bold">int</span> CACHE_SIZE<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">	* 传递进来最多能缓存多少数据
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">	*
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">	* @param cacheSize 缓存大小
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">	*/</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">public</span> <span style="color:#900;font-weight:bold">LRUCache</span><span style="color:#000;font-weight:bold">(</span><span style="color:#458;font-weight:bold">int</span> cacheSize<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// true 表示让 linkedHashMap 按照访问顺序来进行排序，最近访问的放在头部，最
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		<span style="color:#000;font-weight:bold">super</span><span style="color:#000;font-weight:bold">((</span><span style="color:#458;font-weight:bold">int</span><span style="color:#000;font-weight:bold">)</span> Math<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">ceil</span><span style="color:#000;font-weight:bold">(</span>cacheSize <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">0</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">75</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#099">0</span><span style="color:#000;font-weight:bold">.</span><span style="color:#008080">75f</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">true</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		CACHE_SIZE <span style="color:#000;font-weight:bold">=</span> cacheSize<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#998;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">	* 钩子方法，通过put新增键值对的时候，若该方法返回true
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">	* 便移除该map中最老的键和值
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">	*/</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#3c5d5d;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">protected</span> <span style="color:#458;font-weight:bold">boolean</span> <span style="color:#900;font-weight:bold">removeEldestEntry</span><span style="color:#000;font-weight:bold">(</span>Map<span style="color:#000;font-weight:bold">.</span><span style="color:#008080">Entry</span><span style="color:#000;font-weight:bold">&lt;</span>K<span style="color:#000;font-weight:bold">,</span> V<span style="color:#000;font-weight:bold">&gt;</span> eldest<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#998;font-style:italic">// 当map中的数据量大于指定的缓存个数的时候，就自动删除最老的数据。
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span>		<span style="color:#000;font-weight:bold">return</span> size<span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">&gt;</span> CACHE_SIZE<span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-3">
+<h3 id="headline-14">
+持久化
+</h3>
+<div id="outline-text-headline-14" class="outline-text-3">
+<p>用 AOF 来保证数据不丢失，作为数据恢复的第一选择; 用 RDB 来做不同程度的冷备，
+在 AOF 文件都丢失或损坏不可用的时候，还可以使用 RDB 来进行快速的数据恢复</p>
+<div id="outline-container-headline-15" class="outline-4">
+<h4 id="headline-15">
+RDB
+</h4>
+<div id="outline-text-headline-15" class="outline-text-4">
+<p>RDB 持久化机制，是对 Redis 中的数据执行周期性的持久化。</p>
+<ul>
+<li>RDB 会生成多个数据文件，每个数据文件都代表了某一个时刻中 Redis 的数据，这种多个数据文件的方式，非常适合做冷备</li>
+<li>RDB 对 Redis 对外提供的读写服务，影响非常小，可以让 Redis 保持高性能，因为 Redis 主进程只需要 fork 一个子进程，让子进程执行磁盘 IO 操作来进行 RDB 持久化即可</li>
+<li>基于 RDB 数据文件来重启和恢复 Redis 进程，更加快速</li>
+<li>RDB 数据快照文件，都是每隔 5 分钟，或者更长时间生成一次，这个时候就得接受一旦 Redis 进程宕机，那么会丢失最近 5 分钟的数据</li>
+<li>RDB 每次在 fork 子进程来执行 RDB 快照数据文件生成的时候，如果数据文件特别大，可能会导致对客户端提供的服务暂停数毫秒，或者甚至数秒</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-4">
+<h4 id="headline-16">
+AOF
+</h4>
+<div id="outline-text-headline-16" class="outline-text-4">
+<p>AOF 机制对每条写入命令作为日志，以 append-only 的模式写入一个日志文件中，
+在 Redis 重启的时候，可以通过回放 AOF 日志中的写入指令来重新构建整个数据集。</p>
+<ul>
+<li>AOF 可以更好的保护数据不丢失，一般 AOF 会每隔 1 秒，通过一个后台线程执行一次 <code class="verbatim">fsync</code> 操作，最多丢失 1 秒钟的数据。</li>
+<li>AOF 日志文件以 append-only 模式写入，所以没有任何磁盘寻址的开销，写入性能非常高，而且文件不容易破损，即使文件尾部破损，也很容易修复</li>
+<li>AOF 日志文件即使过大的时候，出现后台重写操作，也不会影响客户端的读写。</li>
+<li>AOF 日志文件的命令通过可读较强的方式进行记录，这个特性非常适合做灾难性的误删除的紧急恢复。</li>
+<li>对于同一份数据来说，AOF 日志文件通常比 RDB 数据快照文件更大。</li>
+<li>AOF 开启后，支持的写 QPS 会比 RDB 支持的写 QPS 低</li>
+<li>bug…</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-3">
+<h3 id="headline-17">
+JWT
+</h3>
+<div id="outline-text-headline-17" class="outline-text-3">
+<p>头部（Header）、载荷（Payload）和签名（Signature）。其中，头部和载荷均为JSON格式，使用Base64编码进行序列化，而签名部分是对头部、载荷和密钥进行签名后的结果</p>
+<ul>
+<li>无状态性：JWT是无状态的令牌，不需要在服务器端存储会话信息。相反，JWT令牌中包含了所有必要的信息，如用户身份、权限等。这使得JWT在分布式系统中更加适用，可以方便地进行扩展和跨域访问。</li>
+<li>安全性：JWT使用密钥对令牌进行签名，确保令牌的完整性和真实性。只有持有正确密钥的服务器才能对令牌进行验证和解析。这种方式比传统的基于会话和Cookie的验证更加安全，有效防止了CSRF（跨站请求伪造）等攻击。</li>
+<li>跨域支持：JWT令牌可以在不同域之间传递，适用于跨域访问的场景。通过在请求的头部或参数中携带JWT令牌，可以实现无需Cookie的跨域身份验证。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-3">
+<h3 id="headline-18">
+高可用
+</h3>
+<div id="outline-text-headline-18" class="outline-text-3">
+<div id="outline-container-headline-19" class="outline-4">
+<h4 id="headline-19">
+主从架构
+</h4>
+<div id="outline-text-headline-19" class="outline-text-4">
+<p>一主多从，主负责写，并且将数据复制到其它的 slave 节点，从节点负责读。所有的读请求全部走从节点。
+轻松实现水平扩容，支撑读高并发</p>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-4">
+<h4 id="headline-20">
+主从复制
+</h4>
+<div id="outline-text-headline-20" class="outline-text-4">
+<div id="outline-container-headline-21" class="outline-5">
+<h5 id="headline-21">
+为什么主从全量复制使用 <a href="RDB">RDB</a> 而不是 <a href="AOF">AOF</a>？
+</h5>
+<div id="outline-text-headline-21" class="outline-text-5">
+<ol>
+<li>RDB 文件存储的内容是经过压缩的二进制数据，文件很小。AOF 文件存储的是每一次写命令，类似于 MySQL 的 binlog 日志，通常会必 RDB 文件大很多。因此，传输 RDB 文件更节省带宽，速度也更快。</li>
+<li>使用 RDB 文件恢复数据，直接解析还原数据即可，不需要一条一条地执行命令，速度非常快。而 AOF 则需要依次执行每个写命令，速度非常慢。也就是说，与 AOF 相比，恢复大数据集的时候，RDB 速度更快。</li>
+<li>AOF 需要选择合适的刷盘策略，如果刷盘策略选择不当的话，会影响 Redis 的正常运行。并且，根据所使用的刷盘策略，AOF 的速度可能会慢于 RDB。</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-22" class="outline-4">
+<h4 id="headline-22">
+Sentinel
+</h4>
+<div id="outline-text-headline-22" class="outline-text-4">
+<p>Sentinel 是 Redis 的一种运行模式 ，它主要的作用就是对 Redis 运行节点进行监控。当 master 节点出现故障的时候， Sentinel 会帮助我们实现故障转移，确保整个 Redis 系统的可用性。整个过程完全自动，不需要人工介入
+Sentinel 也是一个 Redis 进程，只是不对外提供读写服务，通常哨兵要配置成单数</p>
+</div>
+</div>
+<div id="outline-container-headline-23" class="outline-4">
+<h4 id="headline-23">
+Cluster
+</h4>
+<div id="outline-text-headline-23" class="outline-text-4">
+<p>Redis 切片集群 就是部署多台 Redis 主节点（master），这些节点之间平等，并没有主从之说，同时对外提供读/写服务。缓存的数据库相对均匀地分布在这些 Redis 实例上，客户端的请求通过路由规则转发到目标 master 上
+为了保障集群整体的高可用，我们需要保证集群中每一个 master 的高可用，可以通过主从复制给每个 master 配置一个或者多个从节点（slave）
+Redis 切片集群对于横向扩展非常友好，只需要增加 Redis 节点到集群中即可
+Redis Cluster 通过 分片（Sharding） 来进行数据管理，提供 主从复制（Master-Slave Replication）、故障转移（Failover） 等开箱即用的功能，可以非常方便地帮助我们解决 Redis 大数据量缓存以及 Redis 服务高可用的问题。
+Redis Cluster 这种方案可以很方便地进行 横向拓展（Scale Out），内置了开箱即用的解决方案。当 Redis Cluster 的处理能力达到瓶颈无法满足系统要求的时候，直接动态添加 Redis 节点到集群中即可。根据官方文档中的介绍，Redis Cluster 支持扩展到 1000 个节点。反之，当 Redis Cluster 的处理能力远远满足系统要求，同样可以动态删除集群中 Redis 节点，节省资源。
+可以说，Redis Cluster 的动态扩容和缩容是其最大的优势。</p>
+<ol>
+<li>可以横向扩展缓解写压力和存储压力，支持动态扩容和缩容；</li>
+<li>具备主从复制、故障转移（内置了 Sentinel 机制，无需单独部署 Sentinel 集群）等开箱即用的功能。</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-24" class="outline-2">
+<h2 id="headline-24">
+Redisson
+</h2>
+<div id="outline-text-headline-24" class="outline-text-2">
+<div id="outline-container-headline-25" class="outline-3">
+<h3 id="headline-25">
+分布式锁
+</h3>
+<div id="outline-text-headline-25" class="outline-text-3">
+<p>Lua exists + hexists + hincrby (pexpire)+ 定期续期
+Lua hexists + del + publish
+可重入锁： 哈希key 为线程ID 重入则value+1，释放则value-1 减到0则del锁</p>
+</div>
+</div>
+<div id="outline-container-headline-26" class="outline-3">
+<h3 id="headline-26">
+读写锁
+</h3>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-27" class="outline-2">
+<h2 id="headline-27">
+Caffeine
+</h2>
+<div id="outline-text-headline-27" class="outline-text-2">
+<p><a href="Redisson">Redisson</a>、Cassandra、Hbase、Neo4j、Druid 等知名开源项目都用到了 Caffeine
+采用的是优化过后的 LFU 算法和 LRU 算法的结合 — W-TinyLFU 算法。W-TinyLFU 算法综合了 LRU 算法和 LFU 算法的优点，同时具备高命中率、低内存占用等优点。</p>
+<div id="outline-container-headline-28" class="outline-3">
+<h3 id="headline-28">
+缓存淘汰
+</h3>
+<div id="outline-text-headline-28" class="outline-text-3">
+<p>W-TinyLFU 算法解决了传统 LFU 算法的两个常见缺陷：</p>
+<ol>
+<li>维护频率信息统计的开销较大：传统 LFU 算法需要为每一个缓存项维护最近一段时间（例如过去 10 分钟或 1 个小时）相应的频率统计信息，每一次访问都需要更新相应的统计信息，这会带来一定的存储和性能开销。</li>
+<li>无法处理稀疏流量（sparse burst）的场景：传统的 LFU 算法使用访问频率作为度量标准，但是在一些场景下，热点数据的访问频率变化非常快。这种情况下，早先频繁访问的记录可能会占据缓存，而后期访问较多的记录则无法被命中。</li>
+</ol>
+<p>对于第一个问题，W-TinyLFU 算法是通过一种叫做 Count-Min Sketch（CMS） 的算法解决的，基于这个算法实现了 LFU 的低内存占用版本 TinyLFU
+Count–Min Sketch 基于 <a href="Bloom Filter">Bloom Filter</a> 演进得来的，借鉴了 Bloom Filter 的核心思想。因此，这两者存在很多共同点比如占用的内存空间都非常小，都依赖 Hash 算法，统计结果都存在一定的误差。不过，这点误差影响并不大，很多场景比如频率统计我们本身并不需要得到一个精确值。
+Bloom Filter 用于确定指定的元素是否存在  Count–Min Sketch 主要用于频率统计。</p>
+</div>
+</div>
+<div id="outline-container-headline-29" class="outline-3">
+<h3 id="headline-29">
+时间轮
+</h3>
+<div id="outline-text-headline-29" class="outline-text-3">
+<p>Caffeine 的过期策略是基于时间轮来做的。时间轮比较适合任务数量比较多的定时任务场景，它的任务写入和执行的时间复杂度都是 0（1）。
+时间轮简单来说就是一个环形的队列（底层一般基于数组实现），队列中的每一个元素（时间格）都可以存放一个定时任务列表。
+时间轮中的每个时间格代表了时间轮的基本时间跨度或者说时间精度
+如果超过数组，引入一叫做 <strong>圈数/轮数</strong> 的概念
+除了增加圈数这种方法之外，还有一种 <strong>多层次时间轮</strong> （类似手表），Caffeine 采用的就是这种方案</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-30" class="outline-2">
+<h2 id="headline-30">
+Bloom Filter
+</h2>
+<div id="outline-text-headline-30" class="outline-text-2">
+<p>一个元素如果判断结果为存在的时候元素不一定存在，但是判断结果为不存在的时候则一定不存在。
+布隆过滤器可以添加元素，但是不能删除元素。因为删掉元素会导致误判率增加。</p>
+</div>
+</div>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://dishmie.github.io/posts/20250505095609-basic/">← Basic</a></div>
+    <div><a href="https://dishmie.github.io/posts/20250514094558-design/">Design  →</a></div>
+</div>
+    
+    <div class="container-comment">
+	<script src="https://utteranc.es/client.js"
+        repo="dishmie/comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+	</script>
+</div>
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        <span class="some">enter your icp or a interesting slogan...<span>
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

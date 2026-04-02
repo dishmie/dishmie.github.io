@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dev on yang</title>
+    <link>https://dishmie.github.io/categories/dev/</link>
+    <description>Recent content in dev on yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://dishmie.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic</title>
+      <link>https://dishmie.github.io/posts/20250505095609-basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250505095609-basic/</guid>
+      <description>java 反编译 javap -c AutoBoxTest.class , IDEA 插件 jclasslib 跨平台语言有很多优点，比如提高开发效率，降低维护成本，扩大用户群等。 跨平台语言也有一些缺点，比如性能损失，兼容性问题，安全风险等。 IO BIO (Blocking</description>
+    </item>
+    
+    <item>
+      <title>Cache</title>
+      <link>https://dishmie.github.io/posts/20250504194959-cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250504194959-cache/</guid>
+      <description>缓存相关 缓存雪崩 缓存穿透 缓存击穿 重建导致系统压力大？ Redisson 分布式锁，双重检查缓存，读写锁，缓存预热+多级缓存 多级缓存 读取顺序 -&amp;gt; L1 -&amp;gt; L2 -&amp;gt; DB 数据更新 从数据库中读取最新数</description>
+    </item>
+    
+    <item>
+      <title>Design</title>
+      <link>https://dishmie.github.io/posts/20250514094558-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250514094558-design/</guid>
+      <description>短链系统 通过哈希算法对长链去哈希。 一般建议使用用非加密型哈希算法比如 MurmurHash 。因为，相比于 MD5，SHA 等加密型哈希算法，非加密型哈希算法往往效率更高！ 我们拿 MurmurHash 来说，</description>
+    </item>
+    
+    <item>
+      <title>Distributed</title>
+      <link>https://dishmie.github.io/posts/20250507091107-distributed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250507091107-distributed/</guid>
+      <description>SpringCloud Gateway 构建于 Spring WebFlux 之上，使用 Project Reactor 库实现响应式编程模型。 它专门设计为在 Netty 环境中运行，充分利用 Netty 的高性能非阻塞 I/O 特性。 这种设计使得 Spring Cloud Gateway 能够在处理大量并发请求时保持较低</description>
+    </item>
+    
+    <item>
+      <title>ES</title>
+      <link>https://dishmie.github.io/posts/20250504182819-es/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250504182819-es/</guid>
+      <description>config refer fsync refresh merge 消耗磁盘 IO，非存储是并发性能较好的 SSD ，控制并发的 merge 线程数 = 1 制作索引模板 ElasticSearch索引状态监控，一般排查思路有哪些？ 可使用Kiban</description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://dishmie.github.io/posts/20250505174524-spring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250505174524-spring/</guid>
+      <description>SpringIOC Spring 的 IOC（控制反转）是工厂模式+Java 的反射机制。 出现的原因：在传统的程序开发中，当需要调用对象时，通常由调用者来创建被调用者的实例，即对象是由调用者主动</description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://dishmie.github.io/posts/20250506151856-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250506151856-sql/</guid>
+      <description>ACID 原子性(Atomicity) 事务被视为不可分割的最小单元，事务的所有操作要么全部提交成功，要么全部失败回滚。回滚可以用回滚日志（Undo Log）来实现，回滚日</description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://dishmie.github.io/posts/20250505154346-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/20250505154346-web/</guid>
+      <description>Reactor Reactor先是通过IO多路复用(select\poll\epoll)，非阻塞地监听到是否有请求连接过来了， 再分发到资源处理器负责处理具体的（连接、读、写）</description>
+    </item>
+    
+  </channel>
+</rss>

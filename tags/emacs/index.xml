@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on yang</title>
+    <link>https://dishmie.github.io/tags/emacs/</link>
+    <description>Recent content in Emacs on yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elisp</title>
+      <link>https://dishmie.github.io/posts/elisp/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/elisp/</guid>
+      <description>📕 转载自 Emacs Lisp 简明教程 - 水木社区 Emacs 版 这是 叶文彬（水木 ID: happierbee) 写的一份 Emacs Lisp 的教程，深入浅出，非常适合初学者。文档的 TeX 代码及 PDF 文档可在此处下载 。 emacs 的高手不能不会 elisp</description>
+    </item>
+    
+    <item>
+      <title>md mode</title>
+      <link>https://dishmie.github.io/posts/md/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/md/</guid>
+      <description>这里是 Hugo 解析 Markdown 内容的展示，如果你使用的是 Org Mode ，可以跳转 Org Mode 查看相关样式。 以下 markdown 正文内容，摘自 Markdown 测试文本 ，并添加、修改了一些章节。 This post is originated from here and is used for testing markdown style. This post contains</description>
+    </item>
+    
+    <item>
+      <title>org mode</title>
+      <link>https://dishmie.github.io/posts/org/</link>
+      <pubDate>Wed, 29 Jun 2022 10:02:15 +0800</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/org/</guid>
+      <description>[#S] bibg 参考配置 ————- ditaa ..————————– \— - \- +——————-+/ \ first second \ / ——————- -\ /- markdown . . ….. —\ /— evil ————- &amp;lt;2025-05-26 Mon&amp;gt; www refer \begin{equation} \left \{ \begin{aligned} 0 &amp;amp;= i_{a} + i_{b}</description>
+    </item>
+    
+  </channel>
+</rss>

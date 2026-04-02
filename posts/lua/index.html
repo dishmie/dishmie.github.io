@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Lua - https://dishmie.github.io/posts/lua/">
+    <meta name="author" content="Jack - https://dishmie.github.io/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>Lua</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="https://dishmie.github.io/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate ">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": false
+	}
+</div>
+    <h1 class="title">
+        
+            Lua
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2025-01-03&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2026-04-02&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            4715 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            10 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+			<a href="/categories/ols">OLs</a>
+			
+		</div>
+		<div class="tag">
+			
+			
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="https://dishmie.github.io/posts/shell/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="https://dishmie.github.io/posts/python/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#基本概念">基本概念</a></li>
+    <li><a href="#字符串">字符串</a>
+      <ul>
+        <li><a href="#字符串截取">字符串截取</a></li>
+        <li><a href="#字符串替换">字符串替换</a></li>
+        <li><a href="#字符串查找匹配">字符串查找（匹配）</a></li>
+        <li><a href="#匹配模式">匹配模式</a></li>
+        <li><a href="#字符串格式化">字符串格式化</a></li>
+      </ul>
+    </li>
+    <li><a href="#数组">数组</a></li>
+    <li><a href="#表-table">表 table</a></li>
+    <li><a href="#文件-io">文件 IO</a>
+      <ul>
+        <li><a href="#简单模式">简单模式</a></li>
+        <li><a href="#完全模式">完全模式</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <p>📘 <a href="https://www.runoob.com/manual/lua53doc/">Lua 5.3 参考手册</a></p>
+<p>📗 <a href="https://www.runoob.com/lua/lua-tutorial.html">Lua 教程 | 菜鸟教程</a></p>
+<blockquote>
+<p>这里我们以实用性为中心，简要了解一下其基本用法 ~</p>
+</blockquote>
+<h2 id="基本概念">基本概念</h2>
+<p><strong>注释</strong> 以两个连字符 <code>--</code> 开头。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 单行注释</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--[[
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"> 多行注释
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"> 多行注释
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"> --]]</span>
+</span></span></code></pre></div><p><strong>标识符</strong> 以一个字母 <code>A-Za-z</code> 或下划线 <code>_</code> 开头后加上 0 个或多个字母，下划线，数字（0 到 9），且区分大小写。</p>
+<p>⚠️ Lua 不允许使用特殊字符如 <strong>@</strong>, <strong>$</strong>, 和 <strong>%</strong> 来定义标识符。</p>
+<p>Lua 中有 8 个 <strong>基本类型</strong> 分别为： <code>nil</code>、<code>boolean</code>、<code>number</code>、<code>string</code>、<code>userdata</code>、<code>function</code>、<code>thread</code> <code>和</code> <code>table</code> 。</p>
+<p>可以使用 <code>type</code> 函数测试给定变量或者值的类型。</p>
+<p><strong>字符串</strong> 由一对双引号或单引号来表示，可以用 2 个方括号来表示&quot;一块&quot;字符串。字符串连接使用的是 <code>..</code> ，使用 <code>#</code> 来计算字符串的长度，放在字符串前面，如：<code>#&quot;www.runoob.com&quot;</code> 。</p>
+<p>在 Lua 里，<strong>表 <code>table</code></strong> 的创建是通过&quot;构造表达式&quot;来完成，其实是一个&quot;关联数组&quot;（associative arrays），数组的索引可以是数字或者是字符串。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 创建一个空的 table</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> tbl1 <span style="color:#000;font-weight:bold">=</span> {}
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 直接初始表</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> tbl2 <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;apple&#34;</span>, <span style="color:#d14">&#34;pear&#34;</span>, <span style="color:#d14">&#34;orange&#34;</span>, <span style="color:#d14">&#34;grape&#34;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> tal3 <span style="color:#000;font-weight:bold">=</span> {key1<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;val1&#34;</span>,key2<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;val2&#34;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 使用 for...in 来遍历</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> k, v <span style="color:#000;font-weight:bold">in</span> pairs(a) <span style="color:#000;font-weight:bold">do</span>  
+</span></span><span style="display:flex;"><span>    print(k <span style="color:#000;font-weight:bold">..</span> <span style="color:#d14">&#34; : &#34;</span> <span style="color:#000;font-weight:bold">..</span> v)  
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span></code></pre></div><p>对 table 的索引使用方括号 <code>[]</code>，也提供了 <code>.</code> 操作。</p>
+<p><strong><code>userdata</code></strong> 是一种用户自定义数据，用于表示一种由应用程序或 C/C++ 语言库所创建的类型，可以将任意 C/C++ 的任意数据类型的数据（通常是 struct 和 指针）存储到 Lua 变量中调用。</p>
+<p><strong>Lua 变量</strong> 有三种类型：全局变量、局部变量、表中的域。</p>
+<p>⚠️ Lua 中的变量全是全局变量，哪怕是语句块或是函数里，除非用 <code>local</code> 显式声明为局部变量。</p>
+<p>局部变量的作用域为从声明位置开始到所在语句块结束。默认值均为 <code>nil</code>。</p>
+<p>Lua 语言提供了以下几种<strong>循环</strong>处理方式：</p>
+<pre tabindex="0"><code>while (条件) do...end;
+for...do...end;
+repeat...until (条件);
+</code></pre><p>可以使用 <code>break</code> 退出当前循环，也可以使用 <code>goto</code> 将程序的控制点转移到一个标签处。</p>
+<p>Lua 提供了以下<strong>控制结构</strong>语句：</p>
+<pre tabindex="0"><code>if (条件) then ... end
+if ... else ...
+if ... else if ...
+</code></pre><p>在 Lua 中，<strong>函数</strong> 是对语句和表达式进行抽象的主要方法。可以返回多个值，每个值以逗号隔开。</p>
+<p>Lua 提供了以下几种<strong>运算符</strong>类型：</p>
+<ul>
+<li>算术运算符</li>
+<li>关系运算符</li>
+<li>逻辑运算符</li>
+<li>其他运算符（<code>..</code> 连接字符串，<code>#</code> 返回字符串或表的长度）</li>
+</ul>
+<p>大多数与其它编程语言大同小异，其中使用 <code>~=</code> 表示不等于，而非 <code>!=</code> 。</p>
+<h2 id="字符串">字符串</h2>
+<blockquote>
+<p>字符串、数组、表是最最常用的数据结构了。</p>
+</blockquote>
+<p>在 Lua 中，字符串可以使用以下三种方式来表示：</p>
+<pre tabindex="0"><code>- 单引号间的一串字符
+- 双引号间的一串字符
+- [[ 与 ]] 间的一串字符
+</code></pre><p>要计算字符串的长度（即字符串中字符的个数），包含中文的一般用 <code>utf8.len</code>，<code>string.len</code> 函数用于计算只包含 ASCII 字符串的长度。</p>
+<p>我们主要来看一下字符串的相关操作。</p>
+<h3 id="字符串截取">字符串截取</h3>
+<pre tabindex="0"><code>string.sub(s, i [, j])
+</code></pre><p>其中：</p>
+<ul>
+<li><code>s</code> 表示要截取的字符串；</li>
+<li><code>i</code> 截取开始的位置；</li>
+<li><code>j</code> 截取结束的位置，默认为 <code>-1</code> - 最后一个字符。</li>
+</ul>
+<h3 id="字符串替换">字符串替换</h3>
+<pre tabindex="0"><code>string.gsub(mainString,findString,replaceString,num)
+</code></pre><p>在字符串中替换，其中：</p>
+<ul>
+<li><code>mainString</code> 为要操作的字符串；</li>
+<li><code>findString</code> 为被替换的字符；</li>
+<li><code>replaceString</code> 为要替换的字符；</li>
+<li><code>num</code> 替换次数（可以忽略，忽略则全部替换）。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>string.gsub(<span style="color:#d14">&#34;aaaa&#34;</span>, <span style="color:#d14">&#34;a&#34;</span>, <span style="color:#d14">&#34;z&#34;</span>, <span style="color:#099">3</span>);
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- zzza    3</span>
+</span></span></code></pre></div><h3 id="字符串查找匹配">字符串查找（匹配）</h3>
+<p><strong>¹ 返回匹配子串的索引位置</strong></p>
+<p>在一个指定的目标字符串 <code>str</code> 中搜索指定的内容 <code>substr</code>，如果找到了一个匹配的子串，就会返回这个子串的起始索引和结束索引，不存在则返回 <code>nil</code>。</p>
+<pre tabindex="0"><code>string.find (str, substr, [init, [plain]])
+</code></pre><p>其中：</p>
+<ul>
+<li><code>str</code> 目标字符串（要在这个字符串中搜索）；</li>
+<li><code>substr</code> 要匹配的子串；</li>
+<li><code>init</code> 搜索的起始位置，默认为 1，可以是一个负数，表示从后往前的字符个数；</li>
+<li><code>plain</code> ，默认为 <code>false</code> ，表示使用正则模式匹配；<code>true</code> 表示只作简单的查找子串的操作。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>string.find(<span style="color:#d14">&#34;Hello Lua user&#34;</span>, <span style="color:#d14">&#34;Lua&#34;</span>, <span style="color:#099">1</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 7    9</span>
+</span></span></code></pre></div><p><strong>² 返回匹配的子串</strong></p>
+<pre tabindex="0"><code>string.match(str, pattern, init)
+</code></pre><p><code>string.match()</code> 只寻找源字符串 <code>str</code> 中的<strong>第一个配对</strong>，参数 <code>init</code> 可选, 指定搜寻过程的起点, 默认为 <code>1</code> 。</p>
+<p>在成功匹配时，函数将返回配对表达式中的所有捕获结果；如果没有设置捕获标记，则返回整个配对字符串。</p>
+<p>如果没有成功的配对呢？返回 <code>nil</code> 。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>string.match(<span style="color:#d14">&#34;I have a questions for you.&#34;</span>, <span style="color:#d14">&#34;%d+ %a+&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 2 questions</span>
+</span></span><span style="display:flex;"><span>string.format(<span style="color:#d14">&#34;%d, %q&#34;</span>, string.match(<span style="color:#d14">&#34;I have 2 questions for you.&#34;</span>, <span style="color:#d14">&#34;(%d+) (%a+)&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 2, &#34;questions&#34;</span>
+</span></span></code></pre></div><p><strong>³ 返回迭代器函数</strong></p>
+<p>那么， <code>string.gmatch()</code> 呢？</p>
+<pre tabindex="0"><code>string.gmatch(str, pattern)
+</code></pre><p>它并不返回字符串，而是<strong>返回一个迭代器函数</strong>，每一次调用这个函数，返回一个在字符串 <code>str</code> 找到的下一个符合 <code>pattern</code> 描述的子串。如果参数 <code>pattern</code> 描述的字符串没有找到，迭代函数返回 <code>nil</code> 。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> word <span style="color:#000;font-weight:bold">in</span> string.gmatch(<span style="color:#d14">&#34;Hello Lua user&#34;</span>, <span style="color:#d14">&#34;%a+&#34;</span>) <span style="color:#000;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span>  print(word)
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- Hello</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- Lua</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">--- user</span>
+</span></span></code></pre></div><h3 id="匹配模式">匹配模式</h3>
+<p>Lua 中的匹配模式直接用常规的字符串来描述，它用于模式匹配函数 <code>string.find</code> 、<code>string.match</code>、<code>string.gmatch</code>、<code>string.gsub</code> 。</p>
+<p>还可以在模式串中使用字符类。什么是 <strong>字符类</strong> 呢？</p>
+<p>字符类指可以匹配一个特定字符集合内任何字符的模式项，比如，字符类 <code>%d</code> 匹配任意数字。下面的表列出了 Lua 支持的所有字符类：</p>
+<p>单个字符(除 <code>^$()%.[]*+-?</code> 外): 与该字符自身配对</p>
+<pre tabindex="0"><code>- .(点): 与任何字符配对
+- %a: 与任何字母配对
+- %c: 与任何控制符配对(例如\n)
+- %d: 与任何数字配对
+- %l: 与任何小写字母配对
+- %p: 与任何标点(punctuation)配对
+- %s: 与空白字符配对
+- %u: 与任何大写字母配对
+- %w: 与任何字母/数字配对
+- %x: 与任何十六进制数配对
+- %z: 与任何代表 0 的字符配对
+- %x(此处x是非字母非数字字符): 与字符x配对. 主要用来处理表达式中有功能的字符(^$()%.[]*+-?)的配对问题, 例如%%与%配对
+- [数个字符类]: 与任何[]中包含的字符类配对. 例如[%w_]与任何字母/数字, 或下划线符号(_)配对
+- [^数个字符类]: 与任何不包含在[]中的字符类配对. 例如[^%s]与任何非空白字符配对
+</code></pre><p>’ <code>%</code> ’ 用作特殊字符的转义字符，因此 ’ <code>%.</code> ’ 匹配点；’ <code>%%</code> ’ 匹配字符 ’ <code>%</code> ‘。转义字符 ’ <code>%</code> ‘不仅可以用来转义特殊字符，还可以用于所有的非字母的字符。</p>
+<p><strong>模式条目可以是：</strong></p>
+<ul>
+<li>单个字符类匹配该类别中任意单个字符；</li>
+<li>单个字符类跟一个 ’ <code>*</code> ‘， 将匹配零或多个该类的字符。 这个条目总是匹配尽可能长的串；</li>
+<li>单个字符类跟一个 ’ <code>+</code> ‘， 将匹配一或更多个该类的字符。 这个条目总是匹配尽可能长的串；</li>
+<li>单个字符类跟一个 ’ <code>-</code> ‘， 将匹配零或更多个该类的字符。 和 ’ <code>*</code> ’ 不同， 这个条目总是匹配尽可能短的串；</li>
+<li>单个字符类跟一个 ’ <code>?</code> ‘， 将匹配零或一个该类的字符。 只要有可能，它会匹配一个；</li>
+<li><code>%n</code>， 这里的 <code>n</code> 可以从 1 到 9； 这个条目匹配一个等于 <code>n</code> 号捕获物（后面有描述）的子串。</li>
+<li><code>%bxy</code>， 这里的 <code>x</code> 和 <code>y</code> 是两个明确的字符； 这个条目匹配以 <code>x</code> 开始 <code>y</code> 结束， 且其中 <code>x</code> 和 <code>y</code> 保持平衡的字符串。 意思是，如果从左到右读这个字符串，对每次读到一个 <code>x</code> 就 <code>+1</code> ，读到一个 <code>y</code> 就 <code>-1</code>， 最终结束处的那个 <code>y</code> 是第一个记数到 <code>0</code> 的 <code>y</code>。 举个例子，条目 <code>%b()</code> 可以匹配到括号平衡的表达式。</li>
+<li><code>%f[set]</code>， 指 边境模式； 这个条目会匹配到一个位于 <code>set</code> 内某个字符之前的一个空串， 且这个位置的前一个字符不属于 <code>set</code> 。 集合 set 的含义如前面所述。 匹配出的那个空串之开始和结束点的计算就看成该处有个字符 ’ <code>\0</code> ’ 一样。</li>
+</ul>
+<blockquote>
+<p>哎哎呀，都什么乱七八糟的 👻</p>
+</blockquote>
+<p><strong>模式</strong> 指一个模式条目的序列。 在模式最前面加上符号 <code>^</code> 将锚定从字符串的开始处做匹配。 在模式最后面加上符号 <code>$</code> 将使匹配过程锚定到字符串的结尾。 如果 <code>^</code> 和 <code>$</code> 出现在其它位置，它们均没有特殊含义，只表示自身。</p>
+<p>模式可以在内部用小括号括起一个子模式； 这些子模式被称为 <strong>捕获物</strong>。</p>
+<p>当匹配成功时，由捕获物匹配到的字符串中的子串被保存起来用于未来的用途。 捕获物以它们左括号的次序来编号。</p>
+<p>例如，对于模式 “<code>(a*(.)%w(%s*))</code>” ， 字符串中匹配到 “<code>a*(.)%w(%s*)</code>” 的部分保存在第一个捕获物中 （因此是编号 1 ）； 由 “<code>.</code>” 匹配到的字符是 2 号捕获物， 匹配到 “<code>%s*</code>” 的那部分是 3 号。</p>
+<p>作为一个特例，空的捕获 <code>()</code> 将捕获到当前字符串的位置（它是一个数字）。 例如，如果将模式 “<code>()aa()</code>” 作用到字符串 “<code>flaaap</code>” 上，将产生两个捕获物： <code>3</code> 和 <code>5</code> 。</p>
+<h3 id="字符串格式化">字符串格式化</h3>
+<p>Lua 提供了 <code>string.format()</code> 函数来生成具有特定格式的字符串, 函数的第一个参数是格式 , 之后是对应格式中每个代号的各种数据。</p>
+<ul>
+<li><code>%c</code> - 接受一个数字, 并将其转化为 ASCII 码表中对应的字符；</li>
+<li><code>%d, %i</code> - 接受一个数字并将其转化为有符号的整数格式；</li>
+<li><code>%f</code> - 接受一个数字并将其转化为浮点数格式；</li>
+<li><code>%q</code> - 接受一个字符串并将其转化为可安全被 Lua 编译器读入的格式；</li>
+<li><code>%s</code> - 接受一个字符串并按照给定的参数格式化该字符串。</li>
+</ul>
+<h2 id="数组">数组</h2>
+<p>在 Lua 中，数组不是一种特定的数据类型，而是一种用来存储一组值的数据结构。实际上，<strong>Lua 中并没有专门的数组类型</strong>，而是使用一种被称为 <strong>“table”</strong> 的数据结构来实现数组的功能。</p>
+<p>⚠️ 在 Lua 索引值是<strong>以 1 为起始</strong>，但你也可以指定 0 开始。</p>
+<p>一维数组可以用 <strong>for</strong> 循环出数组中的元素，如下实例：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 创建一个数组</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">local</span> myArray <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">10</span>, <span style="color:#099">20</span>, <span style="color:#099">30</span>, <span style="color:#099">40</span>, <span style="color:#099">50</span>}
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 循环遍历数组</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, <span style="color:#000;font-weight:bold">#</span>myArray <span style="color:#000;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span>    print(myArray[i])
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">end</span>
+</span></span></code></pre></div><h2 id="表-table">表 table</h2>
+<p>table 是 Lua 的一种数据结构用来帮助我们创建不同的数据类型，如：数组、字典等。</p>
+<p>下面来看一些 Table 的常见操作：</p>
+<p>❶ 连接</p>
+<pre tabindex="0"><code>table.concat (table [, sep [, start [, end]]]):
+</code></pre><p><code>table.concat()</code> 函数列出参数中指定 <code>table</code> 的数组部分从 <code>start</code> 位置到 <code>end</code> 位置的所有元素, 元素间以指定的分隔符(<code>sep</code>)隔开。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>fruits <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;banana&#34;</span>,<span style="color:#d14">&#34;orange&#34;</span>,<span style="color:#d14">&#34;apple&#34;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 返回 table 连接后的字符串</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#d14">&#34;连接后的字符串 &#34;</span>,table.concat(fruits))
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 连接后的字符串     bananaorangeapple</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 指定连接字符</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#d14">&#34;连接后的字符串 &#34;</span>,table.concat(fruits,<span style="color:#d14">&#34;, &#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 连接后的字符串     banana, orange, apple</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 指定索引来连接 table</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#d14">&#34;连接后的字符串 &#34;</span>,table.concat(fruits,<span style="color:#d14">&#34;, &#34;</span>, <span style="color:#099">2</span>,<span style="color:#099">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 连接后的字符串     orange, apple</span>
+</span></span></code></pre></div><p>❷ 插入和移除</p>
+<pre tabindex="0"><code>table.insert (table, [pos,] value)
+</code></pre><p>在 <code>table</code> 的数组部分指定位置(<code>pos</code>)插入值为 <code>value</code> 的一个元素， <code>pos</code> 参数可选, 默认为数组部分末尾。</p>
+<pre tabindex="0"><code>table.remove (table [, pos])
+</code></pre><p>返回 <code>table</code> 数组部分位于 <code>pos</code> 位置的元素. 其后的元素会被前移。<code>pos</code> 参数可选, 默认为 <code>table</code> 长度, 即从最后一个元素删起。</p>
+<p>❸ 排序</p>
+<pre tabindex="0"><code>table.sort (table [, comp])
+</code></pre><p>对给定的 <code>table</code> 进行升序排序。</p>
+<h2 id="文件-io">文件 IO</h2>
+<p>Lua I/O 库用于读取和处理文件，分为简单模式（和 C 一样）、完全模式。</p>
+<p>简单模式，拥有一个当前输入文件和一个当前输出文件，并且提供针对这些文件相关的操作。</p>
+<p>完全模式，使用外部的文件句柄来实现。它以一种面对对象的形式，将所有的文件操作定义为文件句柄的方法。</p>
+<p>简单模式在做一些简单的文件操作时较为合适，但在进行一些高级的文件操作的时候，就显得力不从心。如要同时读取多个文件这样的操作，使用完全模式则较为合适。</p>
+<p>打开文件操作语句如下：</p>
+<pre tabindex="0"><code>file = io.open(filename [, mode])
+</code></pre><p><code>mode</code> 的值有哪些呢？</p>
+<pre tabindex="0"><code>- r  以只读方式打开文件（文件必须存在）
+- w  以只写方式打开文件
+- a  以附加方式打开只写文件
+- r+ 以读写方式打开文件（文件必须存在）
+- w+ 以读写方式打开文件
+- a+ 以读写方式附加文件
+- b  以二进制模式
+- +  表示对 文件既可以读，也可以写
+</code></pre><h3 id="简单模式">简单模式</h3>
+<p>简单模式使用标准的 I/O 或使用一个当前输入文件和一个当前输出文件。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 以只读方式打开文件</span>
+</span></span><span style="display:flex;"><span>ifile <span style="color:#000;font-weight:bold">=</span> io.open(<span style="color:#d14">&#34;input.lua&#34;</span>, <span style="color:#d14">&#34;r&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 设置默认输入文件为 input.lua</span>
+</span></span><span style="display:flex;"><span>io.input(file)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 输出文件第一行</span>
+</span></span><span style="display:flex;"><span>print(io.read())
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 关闭打开的文件</span>
+</span></span><span style="display:flex;"><span>io.close(file)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 以附加方式打开只写文件</span>
+</span></span><span style="display:flex;"><span>ofile <span style="color:#000;font-weight:bold">=</span> io.open(<span style="color:#d14">&#34;output.lua&#34;</span>, <span style="color:#d14">&#34;a&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 设置默认输出文件为 output.lua</span>
+</span></span><span style="display:flex;"><span>io.output(file)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 在文件最后一行添加 Lua 注释</span>
+</span></span><span style="display:flex;"><span>io.write(<span style="color:#d14">&#34;-- output.lua 文件末尾注释&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">-- 关闭打开的文件</span>
+</span></span><span style="display:flex;"><span>io.close(file)
+</span></span></code></pre></div><p>下面来看一些常用的 io 方法：</p>
+<p>¹ <code>io.read()</code> 用来输出文件的一行，它也可以传入参数。</p>
+<pre tabindex="0"><code>*n       - 读取一个数字并返回它，如 file.read(&#34;*n&#34;)
+*a       - 从当前位置读取整个文件，如 file.read(&#34;*a&#34;)
+*|       - （默认值）读取下一行，在文件尾（EOF）处返回 nil
+number   - 返回一个指定字符个数的字符串，或在 EOF 时返回 nil
+</code></pre><p>² <code>io.tmpfile()</code> 返回一个临时文件句柄，该文件以更新模式打开，程序结束时自动删除。</p>
+<p>³ <code>io.type(file)</code> 检测 obj 是否一个可用的文件句柄。</p>
+<p>⁴ <code>io.flush()</code> 向文件写入缓冲中的所有数据。</p>
+<p>⁵ <code>io.lines(optional file name)</code> 返回一个迭代函数，每次调用将获得文件中的一行内容，到文件末尾时返回 <code>nil</code>，但不关闭文件。</p>
+<h3 id="完全模式">完全模式</h3>
+<p>通常我们需要在同一时间处理多个文件。我们需要使用 <code>file:function_name</code> 来代替 <code>io.function_name</code> 方法。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>ifile <span style="color:#000;font-weight:bold">=</span> io.open(<span style="color:#d14">&#34;input.lua&#34;</span>, <span style="color:#d14">&#34;r&#34;</span>)
+</span></span><span style="display:flex;"><span>print(ifile:read())
+</span></span><span style="display:flex;"><span>ifile:close()
+</span></span><span style="display:flex;"><span>ofile <span style="color:#000;font-weight:bold">=</span> io.open(<span style="color:#d14">&#34;output.lua&#34;</span>, <span style="color:#d14">&#34;a&#34;</span>)
+</span></span><span style="display:flex;"><span>ofile:write(<span style="color:#d14">&#34;--test&#34;</span>)
+</span></span><span style="display:flex;"><span>ofile:close()
+</span></span></code></pre></div><p>其中，<code>read</code> 的参数与简单模式一致。它还有以下几个常见的方法：</p>
+<p>¹ <code>file:seek(optional whence, optional offset)</code> 设置和获取当前文件位置，成功则返回最终的文件位置（按字节），失败则返回 <code>nil</code> 加错误信息。其中，<code>whence</code> 值可以是：</p>
+<pre tabindex="0"><code>- set    从文件头开始
+- cur    从当前位置开始（默认）
+- end    从文件尾开始
+- offset 默认为 0
+</code></pre><p>不带参数 <code>file:seek()</code> 则返回当前位置, <code>file:seek(&quot;set&quot;)</code> 则定位到文件头, <code>file:seek(&quot;end&quot;)</code> 则定位到文件尾并返回文件大小。</p>
+<p>² <code>file:flush()</code> 向文件写入缓冲中的所有数据。</p>
+<p>³ <code>io.lines(optional file name)</code> 打开指定的文件 <code>filename</code> 为读模式并返回一个迭代函数，每次调用将获得文件中的一行内容，当到文件尾时，将返回 <code>nil</code> ，并自动关闭文件。</p>
+<p>不带参数时 <code>io.lines()</code> &lt;=&gt; <code>io.input():lines()</code>; 读取默认输入设备的内容，但结束时不关闭文件。</p>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="https://dishmie.github.io/posts/shell/">← Shell</a></div>
+    <div><a href="https://dishmie.github.io/posts/python/">Python  →</a></div>
+</div>
+    
+    <div class="container-comment">
+	<script src="https://utteranc.es/client.js"
+        repo="dishmie/comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+	</script>
+</div>
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        <span class="some">enter your icp or a interesting slogan...<span>
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+</div></div>
+    </body>
+</html>

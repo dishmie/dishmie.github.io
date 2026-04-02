@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on yang</title>
+    <link>https://dishmie.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>md mode</title>
+      <link>https://dishmie.github.io/posts/md/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/md/</guid>
+      <description>这里是 Hugo 解析 Markdown 内容的展示，如果你使用的是 Org Mode ，可以跳转 Org Mode 查看相关样式。 以下 markdown 正文内容，摘自 Markdown 测试文本 ，并添加、修改了一些章节。 This post is originated from here and is used for testing markdown style. This post contains</description>
+    </item>
+    
+    <item>
+      <title>org mode</title>
+      <link>https://dishmie.github.io/posts/org/</link>
+      <pubDate>Wed, 29 Jun 2022 10:02:15 +0800</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/org/</guid>
+      <description>[#S] bibg 参考配置 ————- ditaa ..————————– \— - \- +——————-+/ \ first second \ / ——————- -\ /- markdown . . ….. —\ /— evil ————- &amp;lt;2025-05-26 Mon&amp;gt; www refer \begin{equation} \left \{ \begin{aligned} 0 &amp;amp;= i_{a} + i_{b}</description>
+    </item>
+    
+  </channel>
+</rss>
