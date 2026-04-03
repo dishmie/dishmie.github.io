@@ -84,7 +84,9 @@
         
     </div>
 
-    <div class="container-search">
+    <link rel="stylesheet" href="/css/ship.css">
+
+<div class="container-search">
     <div id="data" style="display: none;">
         
             
@@ -181,7 +183,22 @@
         <div id="sc-res"></div>
     </div>
     <script src="/js/search.js" defer></script>
+
+    <div class="ship-container">
+        <div id="ship" class="ship-container"> 
+            <span class="sc-icon"><img src="/imgs/icons/browser.svg" width="48"> </span>
+            <span id="ship-clear" onclick="clearShipVal()">Del</span>
+            <input id="ship-input" type="text" placeholder="site out search..." autocomplete="off" />
+        </div>
+        <div id="engine">
+            <span id="by" class="engine-item" onclick="selectShipEngine(event)">Bing</span>
+            <span id="go" class="engine-item" onclick="selectShipEngine(event)">Google</span>
+            <span id="bd" class="engine-item" onclick="selectShipEngine(event)">Baidu</span>
+        </div>
+    </div>
+    <script src="/js/ship.js" defer></script>
 </div>
+
 
     
 

@@ -1,0 +1,84 @@
+.ship-container {
+    display: flex;
+    margin-top: 80px;
+    padding-top: 40px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ship-wrapper {
+    position: relative;
+    width: 60%;
+    text-align: center;
+}
+
+#ship-input {
+    text-align: center; 
+    font-family: inherit;
+    font-size: 0.2rem; /* 修正：原 0.3rem 太小了 */
+    color: #333;
+    background: transparent;
+    border: none;
+    /* 问题3：默认线的颜色（浅色） */
+    border-bottom: 1px solid #ddd; 
+    width: 100%;
+    padding: 12px 0;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#ship-input:focus {
+    border-bottom: 2px solid #88afad; 
+}
+#ship-clear {
+    position: absolute;
+    top: 66px;
+    right: 3px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#ship-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+    transition: opacity 0.3s;
+}
+
+#ship-input:focus::placeholder {
+    opacity: 0;
+}
+
+#engine {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.engine-item {
+    font-size: 13px;
+    padding: 4px 12px;
+    background: #f5f5f5; /* 类似 $gray-100 */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #666;
+}
+
+.engine-item:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* 选中状态添加箭号提示 */
+.engine-item.activated {
+    background: #88afad;
+    color: white;
+    position: relative;
+}
+
+.engine-item.activated::before {
+    content: '➭ ';
+    font-size: 12px;
+}
