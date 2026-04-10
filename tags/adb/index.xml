@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>adb on yang</title>
+    <link>https://dishmie.github.io/tags/adb/</link>
+    <description>Recent content in adb on yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/tags/adb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CopyVerificationCode</title>
+      <link>https://dishmie.github.io/posts/copyverificationcode/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/copyverificationcode/</guid>
+      <description>电脑监听获取手机验证码的简要实现方案 先配置 adb 环境 scoop install adb 基于powershell 获取手机最新信息 adb shell &amp;#34;content query --uri content://sms --projection &amp;#39;body,date&amp;#39; --sort &amp;#39;date DESC&amp;#39;&amp;#34; | Select-Object -First 1 最开始跑不通，原因是 win老驱动不适</description>
+    </item>
+    
+  </channel>
+</rss>

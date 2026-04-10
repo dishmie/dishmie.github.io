@@ -6,7 +6,16 @@
     <description>Recent content in Posts on yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CopyVerificationCode</title>
+      <link>https://dishmie.github.io/posts/copyverificationcode/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/copyverificationcode/</guid>
+      <description>电脑监听获取手机验证码的简要实现方案 先配置 adb 环境 scoop install adb 基于powershell 获取手机最新信息 adb shell &amp;#34;content query --uri content://sms --projection &amp;#39;body,date&amp;#39; --sort &amp;#39;date DESC&amp;#39;&amp;#34; | Select-Object -First 1 最开始跑不通，原因是 win老驱动不适</description>
+    </item>
+    
     <item>
       <title>Javascript</title>
       <link>https://dishmie.github.io/posts/javascript/</link>
