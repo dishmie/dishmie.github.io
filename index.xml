@@ -6,7 +6,16 @@
     <description>Recent content on yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode插件</title>
+      <link>https://dishmie.github.io/posts/vscode%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/vscode%E6%8F%92%E4%BB%B6/</guid>
+      <description>VSCode拓展 开发环境 C/C++ C/C++ C/C++ Project Generator Python Pylance Python Python Debugger Python Environments Vue Vue (Official) Vue VSCode Snippets common Code Runner Prettier - Code formatter Competitive Programming Helper (cph) 办公工具 Filter Lines csv Edit CSV Rainbow CSV 主题推荐 一个北极、偏北蓝色、干净优雅的主题 Nord 有Light</description>
+    </item>
+    
     <item>
       <title>CopyVerificationCode</title>
       <link>https://dishmie.github.io/posts/copyverificationcode/</link>
