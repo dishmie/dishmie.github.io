@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>Binlog</title>
+      <link>https://dishmie.github.io/posts/binlog/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/binlog/</guid>
+      <description>MySQL 数据恢复 一、背景 2025年2月1日下午，在线OJ系统，托管在一台 Linux 服务器上，MySQL 运行在 Docker 容器中。当天15:39:58至16:13:00之间，由于一个应用</description>
+    </item>
+    
+    <item>
       <title>Shell</title>
       <link>https://dishmie.github.io/posts/shell/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
@@ -112,7 +121,7 @@
       <pubDate>Wed, 29 Jun 2022 10:02:15 +0800</pubDate>
       
       <guid>https://dishmie.github.io/posts/org/</guid>
-      <description>[#S] bibg 参考配置 ————- ditaa ..————————– \— - \- +——————-+/ \ first second \ / ——————- -\ /- markdown . . ….. —\ /— evil ————- &amp;lt;2025-05-26 Mon&amp;gt; www refer \begin{equation} \left \{ \begin{aligned} 0 &amp;amp;= i_{a} + i_{b}</description>
+      <description>hugo new posts/post/index.md [#S] bibg 参考配置 ————- ditaa ..————————– \— - \- +——————-+/ \ first second \ / ——————- -\ /- markdown . . ….. —\ /— evil ————- &amp;lt;2025-05-26 Mon&amp;gt; www refer \begin{equation} \left \{ \begin{aligned} 0 &amp;amp;=</description>
     </item>
     
     <item>

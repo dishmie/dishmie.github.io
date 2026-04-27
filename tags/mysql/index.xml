@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on yang</title>
+    <link>https://dishmie.github.io/tags/mysql/</link>
+    <description>Recent content in mysql on yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binlog</title>
+      <link>https://dishmie.github.io/posts/binlog/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/binlog/</guid>
+      <description>MySQL 数据恢复 一、背景 2025年2月1日下午，在线OJ系统，托管在一台 Linux 服务器上，MySQL 运行在 Docker 容器中。当天15:39:58至16:13:00之间，由于一个应用</description>
+    </item>
+    
+  </channel>
+</rss>
