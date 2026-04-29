@@ -16,5 +16,14 @@
       <description>电脑监听获取手机验证码的简要实现方案 先配置 adb 环境 scoop install adb 基于powershell 获取手机最新信息 adb shell &amp;#34;content query --uri content://sms --projection &amp;#39;body,date&amp;#39; --sort &amp;#39;date DESC&amp;#39;&amp;#34; | Select-Object -First 1 最开始跑不通，原因是 win老驱动不适</description>
     </item>
     
+    <item>
+      <title>Apps</title>
+      <link>https://dishmie.github.io/posts/apps/</link>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/apps/</guid>
+      <description>装机必备 PowerToys PowerToys Run FancyZones 无限唤醒 AutoHotkey 热字符串 vimd 映射键盘 映射鼠标 左键： DllCall(&amp;#34;mouse_event&amp;#34;, &amp;#34;UInt&amp;#34;, 0x02, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UPtr&amp;#34;, 0) DllCall(&amp;#34;mouse_event&amp;#34;, &amp;#34;UInt&amp;#34;, 0x04, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UPtr&amp;#34;, 0) 右键： DllCall(&amp;#34;mouse_event&amp;#34;, &amp;#34;UInt&amp;#34;, 0x08) DllCall(&amp;#34;mouse_event&amp;#34;, &amp;#34;UInt&amp;#34;, 0x10) 连点模拟： global isMouseClickOn,mouseClickCount,clickInterval isMouseClickOn :=true MouseGetPos xpos,ypos Loop{ if isMouseClickOn{ Click mouseClickCount++ MouseGetPos xpos2,ypos2 if(mouseClickCount*clickInterval&amp;gt;1000*60*10){ isMouseClickOn:=false</description>
+    </item>
+    
   </channel>
 </rss>
