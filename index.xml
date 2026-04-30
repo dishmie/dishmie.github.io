@@ -8,6 +8,15 @@
     <language>zh-cn</language>
     <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Browser插件</title>
+      <link>https://dishmie.github.io/posts/browser%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/browser%E6%8F%92%E4%BB%B6/</guid>
+      <description>浏览器插件推荐 Vimium C Surfingkeys Global Speed Vue.js devtools QR Code Generator SingleFile 沉浸式翻译 网页万能复制 Competitive Companion Codeforces++ Carrot Tampermonkey Amazing Luogu AtCoder Better Codeforces Better Emojiforces</description>
+    </item>
+    
+    <item>
       <title>Pgsql索引</title>
       <link>https://dishmie.github.io/posts/pgsql%E7%B4%A2%E5%BC%95/</link>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>

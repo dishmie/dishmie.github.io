@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dishmie.github.io/categories/browser/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dishmie.github.io/posts/browser%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dishmie.github.io/categories/</loc>
     <lastmod>2026-04-30T11:49:21+08:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/categories/db/</loc>
+    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dishmie.github.io/tags/edge/</loc>
     <lastmod>2026-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/tags/pgsql/</loc>
