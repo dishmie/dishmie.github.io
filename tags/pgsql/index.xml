@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>db on yang</title>
-    <link>https://dishmie.github.io/categories/db/</link>
-    <description>Recent content in db on yang</description>
+    <title>pgsql on yang</title>
+    <link>https://dishmie.github.io/tags/pgsql/</link>
+    <description>Recent content in pgsql on yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/categories/db/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/tags/pgsql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pgsql索引</title>
       <link>https://dishmie.github.io/posts/pgsql%E7%B4%A2%E5%BC%95/</link>
@@ -23,15 +23,6 @@
       
       <guid>https://dishmie.github.io/posts/postgresql%E9%94%81%E9%98%BB%E5%A1%9E/</guid>
       <description>记一次ERP系统高并发下的PostgreSQL锁阻塞 1. 背景 现象： 应用端出现大量请求超时，监控显示线程池基本处于满载状态。查看线程堆栈发现，大量线程处于 RUNNA</description>
-    </item>
-    
-    <item>
-      <title>Binlog</title>
-      <link>https://dishmie.github.io/posts/binlog/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://dishmie.github.io/posts/binlog/</guid>
-      <description>MySQL 数据恢复 一、背景 2025年2月1日下午，在线OJ系统，托管在一台 Linux 服务器上，MySQL 运行在 Docker 容器中。当天15:39:58至16:13:00之间，由于一个应用</description>
     </item>
     
   </channel>

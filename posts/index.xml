@@ -6,7 +6,16 @@
     <description>Recent content in Posts on yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pgsql索引</title>
+      <link>https://dishmie.github.io/posts/pgsql%E7%B4%A2%E5%BC%95/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/pgsql%E7%B4%A2%E5%BC%95/</guid>
+      <description>PostgreSQL提供了几种索引类型： B-tree、Hash、GiST、SP-GiST、GIN、BRIN，以及扩展bloom。 每种索引类型使用不同的算法，最适</description>
+    </item>
+    
     <item>
       <title>VSCode插件</title>
       <link>https://dishmie.github.io/posts/vscode%E6%8F%92%E4%BB%B6/</link>
@@ -32,6 +41,15 @@
       
       <guid>https://dishmie.github.io/posts/javascript/</guid>
       <description>一直没有静下心来，打扫 JavaScript 的边边角角，慢慢干吧~ 第一部分 JavaScript 编程语言 什么是 JavaScript？ 一种可以直接写在网页 HTML 中的脚本语言，在页面加载的时候自动执行。脚本以</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL锁阻塞</title>
+      <link>https://dishmie.github.io/posts/postgresql%E9%94%81%E9%98%BB%E5%A1%9E/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/postgresql%E9%94%81%E9%98%BB%E5%A1%9E/</guid>
+      <description>记一次ERP系统高并发下的PostgreSQL锁阻塞 1. 背景 现象： 应用端出现大量请求超时，监控显示线程池基本处于满载状态。查看线程堆栈发现，大量线程处于 RUNNA</description>
     </item>
     
     <item>
