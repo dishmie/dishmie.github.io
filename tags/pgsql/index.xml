@@ -25,5 +25,14 @@
       <description>记一次ERP系统高并发下的PostgreSQL锁阻塞 1. 背景 现象： 应用端出现大量请求超时，监控显示线程池基本处于满载状态。查看线程堆栈发现，大量线程处于 RUNNA</description>
     </item>
     
+    <item>
+      <title>Pgsql管理</title>
+      <link>https://dishmie.github.io/posts/pgsql%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/pgsql%E7%AE%A1%E7%90%86/</guid>
+      <description>备份 数据库备份由NCC/BIP高级版专属云运维平台生成 还原 在下载完后有如下压缩包： del30_sergserp_20251107_20251107154201.SQL.tar readme.txt 20251107154201.SQL 20251107154201.ddl.SQL 如源库是华为云PG增强版 如需结合自己部署的业务系统使用，必须适配华为云</description>
+    </item>
+    
   </channel>
 </rss>
