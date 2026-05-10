@@ -16,5 +16,14 @@
       <description>lol语音包替换 直接上官网下载 诗蓝语音助手 一键替换日服，韩服语音包 如果仅需要替换个别英雄语音，可以将下载的 *.ko_KR.wad.client 文件 替换成 *.zh_CN.wad.client 即可 eg. 将诗蓝语音助手下载的 Yasuo.ko_KR.wad.client Strawberry_Yasuo.ko_KR.wad.client 替换成 d:</description>
     </item>
     
+    <item>
+      <title>Mame</title>
+      <link>https://dishmie.github.io/posts/mame/</link>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/mame/</guid>
+      <description>roms资源下载推荐网址 https://www.winkawaks.org/roms/neogeo/ https://www.planetemu.net/roms/mame-roms-merged 游戏推荐 kof系列 :: 拳皇进入自定义模式 首先选择游戏的 Universe BIOS() 机型 进入游戏时按下 街机按键 A + B + C 即可进入设置界面 进入 REGION SETUP Mode：选择 CONSOLE-AES</description>
+    </item>
+    
   </channel>
 </rss>
