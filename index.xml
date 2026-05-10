@@ -6,7 +6,16 @@
     <description>Recent content on yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lol语音替换</title>
+      <link>https://dishmie.github.io/posts/lol%E8%AF%AD%E9%9F%B3%E6%9B%BF%E6%8D%A2/</link>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/lol%E8%AF%AD%E9%9F%B3%E6%9B%BF%E6%8D%A2/</guid>
+      <description>lol语音包替换 直接上官网下载 诗蓝语音助手 一键替换日服，韩服语音包 如果仅需要替换个别英雄语音，可以将下载的 *.ko_KR.wad.client 文件 替换成 *.zh_CN.wad.client 即可 eg. 将诗蓝语音助手下载的 Yasuo.ko_KR.wad.client Strawberry_Yasuo.ko_KR.wad.client 替换成 d:</description>
+    </item>
+    
     <item>
       <title>Browser插件</title>
       <link>https://dishmie.github.io/posts/browser%E6%8F%92%E4%BB%B6/</link>
