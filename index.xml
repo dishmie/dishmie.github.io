@@ -6,7 +6,16 @@
     <description>Recent content on yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoHotkey</title>
+      <link>https://dishmie.github.io/posts/autohotkey/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/autohotkey/</guid>
+      <description>兼容 barrier 大写键映射的方案 BG: 为了解决 barrier 服务端操作客户端 ahk大写失效问题， 我在服务端和客户端 都用 SharpKeys 写入注册表 CapsLock -&amp;gt; F13 todo： 服务端操作客户端： CapsLock + alt + hjkl/4/0/g/gg global CapsDown := false *F13:: CapsDown</description>
+    </item>
+    
     <item>
       <title>Barrier</title>
       <link>https://dishmie.github.io/posts/barrier/</link>
