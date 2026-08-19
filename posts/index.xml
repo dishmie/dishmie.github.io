@@ -6,7 +6,25 @@
     <description>Recent content in Posts on yang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 03 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Isp</title>
+      <link>https://dishmie.github.io/posts/isp/</link>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/isp/</guid>
+      <description>v2ray / v2rayN 不支持 anytls 协议前置 新增空白订阅分组设置 配置项添加 [SOCKS] / [HTTP]，填上 address、 port、 用户名、 密码 编辑订阅设置 选择前置代理配置 可选：配置路由规则 启</description>
+    </item>
+    
+    <item>
+      <title>内网穿透</title>
+      <link>https://dishmie.github.io/posts/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <description>cpolar 免费但域名不固定 Cpolar Web UI gui 配置 或者 c:\Users\Admin.cpolar\cpolar.yml 配置 authtoken: &amp;lt;YOUR_AUTH_TOKEN&amp;gt; tunnels: remoteDesktop: id: b7daf0ac-6ef3-4d5e-a539-c09794e633cd proto: tcp addr: &amp;#34;3389&amp;#34; bind_tls: both start_type: enable website: id: 4a6ac70e-610c-45b7-9a86-d7cac8898947 proto: http addr: &amp;#34;8080&amp;#34; bind_tls: both start_type: enable wxpay: id: 54d54e0e-0948-4a61-86df-ae7ab2df323f proto: http addr: &amp;#34;25214&amp;#34; inspect: &amp;#34;false&amp;#34; bind_tls: both region: cn_vip disable_keep_alives: &amp;#34;false&amp;#34; redirect_https: &amp;#34;false&amp;#34; start_type: enable email: dishmie@qq.com Cloudflared 买便宜域名固定 登录 Cloudflare 控制台</description>
+    </item>
+    
     <item>
       <title>AutoHotkey</title>
       <link>https://dishmie.github.io/posts/autohotkey/</link>
@@ -49,7 +67,7 @@
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
       
       <guid>https://dishmie.github.io/posts/browser%E6%8F%92%E4%BB%B6/</guid>
-      <description>浏览器插件推荐 Vimium C Surfingkeys Global Speed Vue.js devtools QR Code Generator SingleFile 沉浸式翻译 网页万能复制 Competitive Companion Codeforces++ Carrot Tampermonkey Amazing Luogu AtCoder Better Codeforces Better Emojiforces</description>
+      <description>浏览器插件推荐 Vimium C Surfingkeys Global Speed Vue.js devtools QR Code Generator SingleFile Proxy SwitchyOmega 3 (ZeroOmega) 沉浸式翻译 网页万能复制 Competitive Companion Codeforces++ Carrot Tampermonkey Amazing Luogu AtCoder Better Codeforces Better Emojiforces</description>
     </item>
     
     <item>
@@ -67,7 +85,7 @@
       <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
       
       <guid>https://dishmie.github.io/posts/vscode%E6%8F%92%E4%BB%B6/</guid>
-      <description>VSCode拓展 开发环境 C/C++ C/C++ C/C++ Project Generator Python Pylance Python Python Debugger Python Environments Vue Vue (Official) Vue VSCode Snippets common Code Runner Prettier - Code formatter Competitive Programming Helper (cph) 办公工具 Filter Lines csv Edit CSV Rainbow CSV 主题推荐 一个北极、偏北蓝色、干净优雅的主题 Nord 有Light</description>
+      <description>VSCode拓展 开发环境 C/C++ C/C++ C/C++ Project Generator Python Pylance Python Python Debugger Python Environments Vue Vue (Official) Vue VSCode Snippets common Code Runner Prettier - Code formatter Competitive Programming Helper (cph) Copy Relative Path and Line Numbers 办公工具 Filter Lines csv Edit CSV Rainbow CSV 主题推荐 一个北极、偏北蓝色、干净优雅的主题 Nord</description>
     </item>
     
     <item>

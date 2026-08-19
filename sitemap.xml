@@ -2,26 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dishmie.github.io/categories/</loc>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dishmie.github.io/posts/isp/</loc>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dishmie.github.io/posts/</loc>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dishmie.github.io/categories/web/</loc>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dishmie.github.io/</loc>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
+  </url><url>
+    <loc>https://dishmie.github.io/posts/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dishmie.github.io/tags/ahk/</loc>
-    <lastmod>2026-06-03T11:40:44+08:00</lastmod>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/posts/autohotkey/</loc>
     <lastmod>2026-06-03T11:40:44+08:00</lastmod>
   </url><url>
-    <loc>https://dishmie.github.io/categories/</loc>
-    <lastmod>2026-06-03T11:40:44+08:00</lastmod>
-  </url><url>
     <loc>https://dishmie.github.io/categories/ols/</loc>
-    <lastmod>2026-06-03T11:40:44+08:00</lastmod>
-  </url><url>
-    <loc>https://dishmie.github.io/posts/</loc>
-    <lastmod>2026-06-03T11:40:44+08:00</lastmod>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/tags/</loc>
-    <lastmod>2026-06-03T11:40:44+08:00</lastmod>
-  </url><url>
-    <loc>https://dishmie.github.io/</loc>
-    <lastmod>2026-06-03T11:40:44+08:00</lastmod>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/posts/barrier/</loc>
     <lastmod>2026-06-03T11:40:44+08:00</lastmod>
@@ -66,7 +75,7 @@
     <lastmod>2026-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/tags/adb/</loc>
-    <lastmod>2026-06-01T11:43:43+08:00</lastmod>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/posts/copyverificationcode/</loc>
     <lastmod>2026-04-26T18:03:30+08:00</lastmod>
@@ -81,10 +90,10 @@
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/posts/apps/</loc>
-    <lastmod>2026-06-01T11:43:43+08:00</lastmod>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/tags/shell/</loc>
-    <lastmod>2026-06-01T11:43:43+08:00</lastmod>
+    <lastmod>2026-08-19T15:24:31+08:00</lastmod>
   </url><url>
     <loc>https://dishmie.github.io/posts/binlog/</loc>
     <lastmod>2026-04-27T17:44:59+08:00</lastmod>
