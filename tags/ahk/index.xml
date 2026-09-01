@@ -13,7 +13,7 @@
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
       
       <guid>https://dishmie.github.io/posts/autohotkey/</guid>
-      <description>兼容 barrier 大写键映射的方案 BG: 为了解决 barrier 服务端操作客户端 ahk大写失效问题， 我在服务端和客户端 都用 SharpKeys 写入注册表 CapsLock -&amp;gt; F13 todo： 服务端操作客户端： CapsLock + alt + hjkl/4/0/g/gg global CapsDown := false *F13:: CapsDown</description>
+      <description>兼容 barrier 大写键映射的方案 BG: 为了解决 barrier 服务端操作客户端 ahk大写失效问题， 我在服务端和客户端 都用 SharpKeys 写入注册表 CapsLock -&amp;gt; F13 claude-opus-5 重构 个人配置：ye.ahk</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
       
       <guid>https://dishmie.github.io/posts/apps/</guid>
-      <description>装机必备 PowerToys PowerToys Run FancyZones 无限唤醒 AutoHotkey 热字符串 vimd 映射键盘 映射鼠标 左键： DllCall(&amp;#34;mouse_event&amp;#34;, &amp;#34;UInt&amp;#34;, 0x02, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UPtr&amp;#34;, 0) DllCall(&amp;#34;mouse_event&amp;#34;, &amp;#34;UInt&amp;#34;, 0x04, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UInt&amp;#34;, 0, &amp;#34;UPtr&amp;#34;, 0) 右键： DllCall(&amp;#34;mouse_event&amp;#34;, &amp;#34;UInt&amp;#34;, 0x08) DllCall(&amp;#34;mouse_event&amp;#34;, &amp;#34;UInt&amp;#34;, 0x10) 连点模拟： global isMouseClickOn,mouseClickCount,clickInterval isMouseClickOn :=true MouseGetPos xpos,ypos Loop{ if isMouseClickOn{ Click mouseClickCount++ MouseGetPos xpos2,ypos2 if(mouseClickCount*clickInterval&amp;gt;1000*60*10){ isMouseClickOn:=false</description>
+      <description>装机必备 PowerToys PowerToys Run FancyZones 无限唤醒 AutoHotkey 热字符串 vimd 映射键盘 映射鼠标 复制手机验证码 Total Commander VimDesktop 基于ahk实现的全键操作文件管理器 Everything 数据库索引加速文件搜索 plugins 实用插件推荐 wdx xPDFSearch xPDFSearch is a content plugin for</description>
     </item>
     
   </channel>
