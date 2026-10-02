@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on yang</title>
+    <link>https://dishmie.github.io/tags/javascript/</link>
+    <description>Recent content in javascript on yang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dishmie.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js生态</title>
+      <link>https://dishmie.github.io/posts/node/</link>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dishmie.github.io/posts/node/</guid>
+      <description>一、 角色全景与关系图解 在搭建前端/Node 基础设施时 +-----------------------------------------------------------------------+ | NVM (版本管理器) | | 管理并切换不同版本的 Node.js（如 v18 / v20 / v22） | +-----------------------------------------------------------------------+ | v +-----------------------------------------------------------------------+ | Node.js (运行环境) | |</description>
+    </item>
+    
+  </channel>
+</rss>
