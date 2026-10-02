@@ -106,6 +106,10 @@ function search() {
     } 
     // 同样无值时不显示清空符号
     scClear.style = scVal ? 'opacity: 1' : 'opacity: 0';
+    // 仅通知本页的统计监听器；查询原文不会发送到 GA4。
+    document.dispatchEvent(new CustomEvent('blog:search', {
+        detail: { query: scVal, resultCount: scResPostsCounts }
+    }));
 }
 
 // search()
